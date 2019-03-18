@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutterapp_vs/ChangeWidget.dart';
+import 'package:flutterapp_vs/FadeAnimation.dart';
 import 'package:flutterapp_vs/UpdateText.dart';
 import 'package:flutterapp_vs/RandomWords.dart';
 
@@ -18,8 +20,8 @@ class MyApp extends StatelessWidget {
 }
 
 class MainDemoList extends StatelessWidget {
-  final List<String> _list = ["UpdateText","RandomWords"];
-  final List<Widget> _listWidget  = [UpdateText(),RandomWords()];
+  final List<String> _list = ["UpdateText","RandomWords","ChangeWidget","FadeAnimation"];
+  final List<Widget> _listWidget  = [UpdateText(),RandomWords(),ChangeWidget(),FadeAnimation(title: 'Fade Demo')];
   final _biggerFont = const TextStyle(fontSize: 18.0);
 
   @override
